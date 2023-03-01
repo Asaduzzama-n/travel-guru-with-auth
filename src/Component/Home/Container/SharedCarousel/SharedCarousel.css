@@ -1,0 +1,20 @@
+.carousel-container{
+    border-radius: 20px!important;
+    position: relative;
+}
+.carousel-container img{
+    border-radius: 20px;
+    
+}
+.carousel-container h2{
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    margin-left: 10px;
+    font-weight:bold;
+}
+.carousel-container:hover{
+    border: 5px solid #F9A51A;
+    border-radius: 20px!important;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.navBar a{
+    color: white;
+    font-size: larger;
+}
+.navLink a{
+    text-decoration: none;
+    
+}
+.navLink a:hover{
+    color: #EF9F19;
+}
+.navLink a button{
+    background-color: #EF9F19;
+    border: none;
+    
+}

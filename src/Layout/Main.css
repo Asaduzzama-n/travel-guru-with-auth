@@ -1,0 +1,10 @@
+.bg{
+   
+    background-image:  linear-gradient(to right, rgba(1, 8, 13, 0.368), rgba(14, 17, 19, 0.523)), url('../images/Rectangle\ 1.png');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* opacity: 0.3; */
+  }
+  

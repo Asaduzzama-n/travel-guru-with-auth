@@ -1,0 +1,15 @@
+.info-container{
+    width: 70%;
+    margin: auto;
+    text-align: start;
+    color: white;
+}
+.book-now{
+    width: 150px;
+    height: 40px;
+    color: black;
+    background-color: #EF9F19;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
