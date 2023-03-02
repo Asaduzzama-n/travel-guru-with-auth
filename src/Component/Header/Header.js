@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Form, Link } from 'react-router-dom';
+import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import logo from '../../images/logo.png'
 import './Header.css';
 
 const Header = () => {
+
+    const {user,logOutUser} = useContext(AuthContext);
+
+    const handleSignOut = () =>{
+
+        logOutUser()
+        .then(()=>{
+            console.log("out");
+        })
+        .catch((error)=> console.error(error.message));
+    }
 
 
     return (
@@ -28,7 +40,13 @@ const Header = () => {
                                 <Link className='mx-3' to={'/destination'}>Destination</Link>
                                 <Link className='mx-3' to={'/blog'}>Blog</Link>
                                 <Link className='mx-3' to={'/contact'}>Contact</Link>
-                                <Link className='mx-3' to={'/contact'}> <button className='px-4 rounded'>Login</button> </Link>
+                                {
+                                    user?.uid ? <Link className='mx-3'> <button onClick={handleSignOut} className='px-4 rounded'>Logout</button> </Link> : 
+                                    
+                                    <Link className='mx-3' to={'/login'}> <button className='px-4 rounded'>Login</button> </Link>
+
+                                }
+                                
 
                             </Nav>
 

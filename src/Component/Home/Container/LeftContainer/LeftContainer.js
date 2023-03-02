@@ -9,7 +9,7 @@ const LeftContainer = ({destination}) => {
         <div className='info-container'>
             <h1>{destination.name}</h1>
             <p>{destination.info}</p>
-            <Link to={'/destination'}><button className='book-now'>Book Now</button></Link>
+            <Link to={`/destination/${destination.id}`}><button className='book-now'>Book Now</button></Link>
         </div>
     );
 };

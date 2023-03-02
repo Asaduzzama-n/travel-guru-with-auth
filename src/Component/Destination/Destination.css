@@ -1,0 +1,49 @@
+.destination-info{
+    width: 80%;
+    margin: auto;
+    color: white;
+    margin-top: 200px;
+}
+.destination-info h1{
+    text-align: start;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.booking-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.booking-card{
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+}
+.booking-card form{
+    height: 400px;
+    padding: 20px;
+    line-height: 45px;
+}
+.booking-card form input{
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: #ededed;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    /* margin-bottom: 10px; */
+}
+.booking-card form button{
+    border: none;
+    background-color:#EF9F19 ;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.custom-design{
+    width: 48%;
+}
